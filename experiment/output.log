@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "/workspace/home/meme-generator/experiment/exp.py", line 3, in <module>
+    from transformers import AutoProcessor, LlavaForConditionalGeneration
+ModuleNotFoundError: No module named 'transformers'
+Traceback (most recent call last):
+  File "/workspace/home/meme-generator/experiment/exp.py", line 3, in <module>
+    from transformers import AutoProcessor, LlavaForConditionalGeneration
+ModuleNotFoundError: No module named 'transformers'
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:00<00:00,  5.24it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 10.45it/s]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/file_download.py:801: UserWarning: Not enough free disk space to download the file. The expected file size is: 17.21 MB. The target location /mnt/md0/hf_cache/hub/models--fancyfeast--llama-joycaption-beta-one-hf-llava/blobs only has 0.65 MB free disk space.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/workspace/home/meme-generator/experiment/exp.py", line 10, in <module>
+    processor = AutoProcessor.from_pretrained(MODEL_NAME)
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/models/auto/processing_auto.py", line 391, in from_pretrained
+    return processor_class.from_pretrained(
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/processing_utils.py", line 1331, in from_pretrained
+    args = cls._get_arguments_from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/processing_utils.py", line 1390, in _get_arguments_from_pretrained
+    args.append(attribute_class.from_pretrained(pretrained_model_name_or_path, **kwargs))
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1125, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2033, in from_pretrained
+    resolved_vocab_files[file_id] = cached_file(
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/utils/hub.py", line 321, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/utils/hub.py", line 566, in cached_files
+    raise e
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/transformers/utils/hub.py", line 478, in cached_files
+    hf_hub_download(
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1171, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1738, in _download_to_tmp_and_move
+    http_get(
+  File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 499, in http_get
+    temp_file.write(chunk)
+OSError: [Errno 28] No space left on device
