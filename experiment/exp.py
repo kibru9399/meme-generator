@@ -1,17 +1,17 @@
 import torch
 from PIL import Image
 from transformers import AutoProcessor, LlavaForConditionalGeneration
+from load_img import img
 
-
-IMAGE_PATH = "https://upload.wikimedia.org/wikipedia/commons/c/c8/New_York_City_roofs_%284891620775%29.jpg"
+IMAGE_PATH = "experiment/sunflower.jpg" #"https://onlinejpgtools.com/images/examples-onlinejpgtools/sunflower.jpg"
 PROMPT = "Write a long descriptive caption for this image in a formal tone"
 MODEL_NAME = "fancyfeast/llama-joycaption-beta-one-hf-llava"
 
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
-llava_model = LlavaForConditionalGeneration.from_pretrained(MODEL_NAME, torch_dtype="float8", device_map=0 )
+llava_model = LlavaForConditionalGeneration.from_pretrained(MODEL_NAME, torch_dtype="bfloat16", device_map=0 )
 llava_model.eval()
 
-image = Image.open(IMAGE_PATH)
+image = img #Image.open(IMAGE_PATH)
 convo = [
     {
         "role": "system", 
