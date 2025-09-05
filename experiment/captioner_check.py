@@ -1,5 +1,5 @@
 """
-exp.py
+captioner_check.py
 
 This module runs inference using Llava model and internet jpeg images
 """
@@ -8,7 +8,10 @@ from transformers import AutoProcessor, LlavaForConditionalGeneration
 from load_img import img
 
 IMAGE_PATH = "experiment/sunflower.jpg"
-PROMPT = "Write a long descriptive caption for this image in a formal tone"
+PROMPT = """
+Write a long descriptive caption for this image in a funny tone,
+write from a prespective of stupid parkour boys.
+"""
 MODEL_NAME = "fancyfeast/llama-joycaption-beta-one-hf-llava"
 
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
