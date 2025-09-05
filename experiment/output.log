@@ -40,3 +40,60 @@ Traceback (most recent call last):
   File "/workspace/home/meme-generator/meme/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 499, in http_get
     temp_file.write(chunk)
 OSError: [Errno 28] No space left on device
+************* Module exp
+experiment/exp.py:6:0: C0301: Line too long (114/100) (line-too-long)
+experiment/exp.py:11:0: C0301: Line too long (110/100) (line-too-long)
+experiment/exp.py:19:6: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:38:17: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:39:29: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:40:25: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:41:31: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:42:25: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:43:26: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:44:21: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:54:0: C0301: Line too long (111/100) (line-too-long)
+experiment/exp.py:56:0: C0304: Final newline missing (missing-final-newline)
+experiment/exp.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+experiment/exp.py:2:0: W0611: Unused Image imported from PIL (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 3.64/10 (previous run: 3.64/10, +0.00)
+
+************* Module exp
+experiment/exp.py:6:39: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:20:6: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:39:17: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:40:29: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:41:25: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:42:31: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:43:25: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:44:26: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:45:21: C0303: Trailing whitespace (trailing-whitespace)
+experiment/exp.py:55:0: C0301: Line too long (111/100) (line-too-long)
+experiment/exp.py:57:0: C0304: Final newline missing (missing-final-newline)
+experiment/exp.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+experiment/exp.py:2:0: W0611: Unused Image imported from PIL (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 4.09/10 (previous run: 3.64/10, +0.45)
+
+************* Module exp
+experiment/exp.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 9.52/10 (previous run: 4.09/10, +5.43)
+
+************* Module exp
+experiment/exp.py:11:12: E0602: Undefined variable 'AutoProcessor' (undefined-variable)
+experiment/exp.py:12:14: E0602: Undefined variable 'LlavaForConditionalGeneration' (undefined-variable)
+experiment/exp.py:16:8: E0602: Undefined variable 'img' (undefined-variable)
+experiment/exp.py:32:51: E0602: Undefined variable 'torch' (undefined-variable)
+experiment/exp.py:37:5: E0602: Undefined variable 'torch' (undefined-variable)
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 9.52/10, -9.52)
+
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 0.00/10, +10.00)
+
